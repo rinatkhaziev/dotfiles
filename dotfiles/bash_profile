@@ -2,7 +2,7 @@
 #
 export PATH=$PATH:$HOME/.bin
 export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/heroku/bin:$PATH
+
 
 # Shell aliases
 #
@@ -18,6 +18,8 @@ alias gd='git diff'
 alias gl='git sl'
 alias gp='git push'
 alias master='git checkout master'
+alias gsr='git svn rebase'
+alias gst='git svn dcommit'
 
 # Ruby versions aliases
 #
@@ -61,6 +63,3 @@ fi
 
 # Load RVM (Ruby version manager)
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-# Load NVM (Node version manager)
-[[ -s /Users/sosedoff/.nvm/nvm.sh ]] && . /Users/sosedoff/.nvm/nvm.sh

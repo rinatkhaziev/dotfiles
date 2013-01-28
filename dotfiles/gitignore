@@ -8,3 +8,5 @@
 /.bundle
 TAGS
 tags
+/.sass-cache
+.phptidy-cache
