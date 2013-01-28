@@ -18,8 +18,16 @@ alias gd='git diff'
 alias gl='git sl'
 alias gp='git push'
 alias master='git checkout master'
+
+#Git SVN aliases
 alias gsr='git svn rebase'
 alias gst='git svn dcommit'
+alias gsi='git svn info'
+
+# WP-CLI
+alias wpd='wp core download'
+alias wppup='wp plugin update --all'
+alias wpcup='wp core update'
 
 # Ruby versions aliases
 #
