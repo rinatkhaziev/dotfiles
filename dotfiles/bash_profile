@@ -23,6 +23,7 @@ alias master='git checkout master'
 alias gsr='git svn rebase'
 alias gst='git svn dcommit'
 alias gsi='git svn info'
+alias gsrc='git svn rebase && git svn dcommit'
 
 # WP-CLI
 alias wpd='wp core download'
