@@ -18,6 +18,7 @@ alias gd='git diff'
 alias gl='git sl'
 alias gp='git push'
 alias master='git checkout master'
+alias gci='git commit -am'
 
 #Git SVN aliases
 alias gsr='git svn rebase'
