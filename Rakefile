@@ -93,6 +93,23 @@ namespace :sublime do
   end
 end
 
+namespace :git do
+  desc 'Install git templates'
+  task :templates do
+    source_path = File.join(File.dirname(__FILE__), 'git_templates')
+    target_path = File.join(ENV['HOME'], '.git_templates')
+
+    if File.exists?(target_path)
+      puts "Unlinking installed git_templates directory"
+      system %[unlink #{target_path}]
+    end
+
+    puts "Installing new git_templates directory"
+    puts "ln -vsf #{source_path} #{target_path}"
+    system %[ln -vsf #{source_path} #{target_path}]
+  end
+end
+
 desc 'Install default configuration'
 task :install do
   Rake::Task['dotfiles'].invoke
