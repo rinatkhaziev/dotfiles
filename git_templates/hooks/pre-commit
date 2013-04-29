@@ -8,7 +8,7 @@ fi
  
 for FILE in `git diff-index --name-status $against -- | cut -c3-` ; do
     # Check if the file contains 'debugger'
-    if [ "grep 'var_dump\|print_r' $FILE" ]
+    if [ "grep -c 'var_dump\|print_r' $FILE" -gt 0 ]
     then
 	echo `tput setaf 1`
         echo $FILE 'contains' `grep -c 'var_dump\|print_r' $FILE` 'calls to debug methods'
