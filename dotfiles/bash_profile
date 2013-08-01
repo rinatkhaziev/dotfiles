@@ -1,8 +1,8 @@
 # Path exports
 #
 export PATH=$PATH:$HOME/.bin
-export PATH=/usr/local/bin:/usr/local/sbin/:$PATH
-
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export WP_TESTS_DIR=~/Sites/wordpress-unit-tests
 
 # Shell aliases
 #
@@ -46,6 +46,9 @@ alias bi="bundle install"
 alias bu="bundle update"
 alias r='rake'
 
+# Vargan
+alias v=vagrant
+alias vw="cd ~/Vagrant/vvv/www"
 # Rails stuff
 #
 alias rs="rails server thin"
