@@ -48,7 +48,11 @@ alias r='rake'
 
 # Vargan
 alias v=vagrant
-alias vw="cd ~/Vagrant/vvv/www"
+alias vw="cd ~/Vagrant/vvv/www && cd"
+
+alias wpt="cd wp-content/themes && cd"
+alias wpp="cd wp-content/plugins && cd"
+
 # Rails stuff
 #
 alias rs="rails server thin"
