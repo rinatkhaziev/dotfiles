@@ -50,6 +50,9 @@ alias r='rake'
 alias v=vagrant
 alias vw="cd ~/Vagrant/vvv/www && cd"
 
+# VBox quick fix for Mavericks DP
+alias vvbf="sudo /Library/StartupItems/VirtualBox/VirtualBox restart"
+
 alias wpt="cd wp-content/themes && cd"
 alias wpp="cd wp-content/plugins && cd"
 
