@@ -64,7 +64,7 @@ alias rc="rails console"
 # Other stuff
 #
 alias "please"="sudo"
-
+alias "wakeupneo"="cmatrix"
 # ------------------------------------------------------------------------------
 
 parse_git_branch() {
