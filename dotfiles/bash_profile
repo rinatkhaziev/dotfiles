@@ -50,6 +50,7 @@ alias r='rake'
 alias v=vagrant
 alias vw="cd ~/Vagrant/vvv/www && cd"
 alias vv="cd ~/Vagrant/vip-quickstart/www/wp-content/themes/vip"
+alias vv6="cd ~/Vagrant/64-vip-quickstart/www/wp-content/themes/vip"
 alias wpt="cd wp-content/themes && cd"
 alias wpp="cd wp-content/plugins && cd"
 
