@@ -19,6 +19,8 @@ alias gl='git sl'
 alias gp='git push'
 alias master='git checkout master'
 alias gci='git commit'
+alias grhh='git reset head --hard'
+
 
 #Git SVN aliases
 alias gsr='git svn rebase'
@@ -31,13 +33,6 @@ alias wpd='wp core download'
 alias wppup='wp plugin update --all'
 alias wpcup='wp core update'
 
-# Ruby versions aliases
-#
-alias 187='rvm use 1.8.7'
-alias 192='rvm use 1.9.2'
-alias 193='rvm use 1.9.3'
-alias ree='rvm use ree'
-
 # Some other dev-related aliases
 #
 alias b="bundle"
@@ -48,16 +43,9 @@ alias r='rake'
 
 # Vargan
 alias v=vagrant
-alias vw="cd ~/Vagrant/vvv/www && cd"
-alias vv="cd ~/Vagrant/vip-quickstart/www/wp-content/themes/vip"
 alias vv6="cd ~/Vagrant/64-vip-quickstart/www/wp-content/themes/vip"
 alias wpt="cd wp-content/themes && cd"
 alias wpp="cd wp-content/plugins && cd"
-
-# Rails stuff
-#
-alias rs="rails server thin"
-alias rc="rails console"
 
 # Other stuff
 #
