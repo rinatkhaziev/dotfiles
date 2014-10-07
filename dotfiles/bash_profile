@@ -13,6 +13,7 @@ alias copyssh='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Public key was copied int
 
 # Git aliases
 #
+alias g='git'
 alias gs='git st'
 alias gd='git diff'
 alias gl='git sl'
