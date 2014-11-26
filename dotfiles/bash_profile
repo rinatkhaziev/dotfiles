@@ -52,6 +52,7 @@ alias wpp="cd wp-content/plugins && cd"
 #
 alias "please"="sudo"
 alias "wakeupneo"="cmatrix"
+alias "countlines"="find . -name '*.php' | xargs wc -l"
 # ------------------------------------------------------------------------------
 
 parse_git_branch() {
