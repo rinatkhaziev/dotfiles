@@ -2,7 +2,6 @@
 #
 export PATH=$PATH:$HOME/.bin
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export WP_TESTS_DIR=~/Sites/wordpress-unit-tests
 
 # Shell aliases
 #
@@ -61,11 +60,22 @@ parse_git_branch() {
 
 # Terminal options
 #
+INIT_PS="\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^ \[\e[0m\]; else echo \[\e[31m\]O_O \[\e[0m\]; fi\`[\u:\[\033[0;32m\]\w\[\033[m\]] "
+
 if [[ `whoami` == "root" ]]; then
   PS1="# "
 else
-  PS1="\w\[\e[0;33;49m\]\$(parse_git_branch)\[\e[0;0m\]$ "
+#  PS1="\w\[\e[0;33;49m\]\$(parse_git_branch)\[\e[0;0m\]$ "
+	PS1="$INIT_PS \$ "
 fi
+
+if [[ `which git-radar` != "" && `parse_git_branch` != "" ]]; then
+ PS1="$INIT_PS \n   \$(git-radar --bash --fetch) \n $  "
+else
+	PS1="$INIT_PS $  "
+fi
+
+
 
 # ------------------------------------------------------------------------------
 

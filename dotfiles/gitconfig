@@ -43,3 +43,5 @@
   auto = 1
 [init]
 	templatedir = ~/.git_templates
+[diff "nodiff"]
+	command = /usr/bin/true
