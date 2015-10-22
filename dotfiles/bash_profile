@@ -20,18 +20,13 @@ alias gp='git push'
 alias master='git checkout master'
 alias gci='git commit'
 alias grhh='git reset head --hard'
-
+alias gvlog='copy_commit_message'
 
 #Git SVN aliases
 alias gsr='git svn rebase'
 alias gst='git svn dcommit'
 alias gsi='git svn info'
 alias gsrc='git svn rebase && git svn dcommit'
-
-# WP-CLI
-alias wpd='wp core download'
-alias wppup='wp plugin update --all'
-alias wpcup='wp core update'
 
 # Some other dev-related aliases
 #
@@ -44,8 +39,6 @@ alias r='rake'
 # Vargan
 alias v=vagrant
 alias vv="cd ~/Vagrant/vip-quickstart/www/wp-content/themes/vip"
-alias wpt="cd wp-content/themes && cd"
-alias wpp="cd wp-content/plugins && cd"
 
 # Other stuff
 #
@@ -53,6 +46,8 @@ alias "please"="sudo"
 alias "wakeupneo"="cmatrix"
 alias "countlines"="find . -name '*.php' | xargs wc -l"
 # ------------------------------------------------------------------------------
+
+copy_commit_message() { git log --pretty="%s (%h) <%cn>%n" "$@" | pbcopy ; }
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -65,16 +60,14 @@ INIT_PS="\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^ \[\e[0m\]; else echo \[\e[31m
 if [[ `whoami` == "root" ]]; then
   PS1="# "
 else
-#  PS1="\w\[\e[0;33;49m\]\$(parse_git_branch)\[\e[0;0m\]$ "
 	PS1="$INIT_PS \$ "
 fi
 
-if [[ `which git-radar` != "" && `parse_git_branch` != "" ]]; then
+if [[ `which git-radar` != "" ]]; then
  PS1="$INIT_PS \n   \$(git-radar --bash --fetch) \n $  "
 else
-	PS1="$INIT_PS $  "
+	PS1="$INIT_PS$ "
 fi
-
 
 
 # ------------------------------------------------------------------------------
