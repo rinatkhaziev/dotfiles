@@ -58,7 +58,7 @@ set_docker_machine_env() {
 copy_commit_message() { git log --pretty="%s (%h) <%cn>%n" "$@" | pbcopy ; }
 
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
 # Terminal options
@@ -66,7 +66,7 @@ parse_git_branch() {
 INIT_PS="\`if [ \$? = 0 ]; then echo 👌🏼; else echo 😡; fi\`  [\u:\[\033[0;32m\]\w\[\033[m\]]"
 
 if [[ `whoami` == "root" ]]; then
-  PS1="# "
+	PS1="# "
 else
 	PS1="$INIT_PS \$ "
 fi
