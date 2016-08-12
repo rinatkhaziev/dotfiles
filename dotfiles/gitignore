@@ -11,3 +11,4 @@ tags
 /.sass-cache
 .phptidy-cache
 node_modules/
+*.map

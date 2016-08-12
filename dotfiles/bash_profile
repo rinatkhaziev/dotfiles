@@ -52,7 +52,6 @@ alias "countlines"="find . -name '*.php' | xargs wc -l"
 alias setdocker="set_docker_machine_env"
 
 set_docker_machine_env() {
-	#eval( $("docker-machine env {$@}");
 	eval "$(docker-machine env $@)"
 }
 
@@ -64,7 +63,7 @@ parse_git_branch() {
 
 # Terminal options
 #
-INIT_PS="\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^ \[\e[0m\]; else echo \[\e[31m\]O_O \[\e[0m\]; fi\`[\u:\[\033[0;32m\]\w\[\033[m\]] "
+INIT_PS="\`if [ \$? = 0 ]; then echo 👌🏼; else echo 😡; fi\`  [\u:\[\033[0;32m\]\w\[\033[m\]]"
 
 if [[ `whoami` == "root" ]]; then
   PS1="# "
@@ -83,3 +82,4 @@ fi
 
 # Load RVM (Ruby version manager)
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

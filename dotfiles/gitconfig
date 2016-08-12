@@ -10,6 +10,8 @@
 
 [core]
   editor = nano
+	pager = less -x4
+	excludesfile = /Users/rinat/.gitignore
 
 [alias]
   co = checkout
@@ -18,7 +20,7 @@
   ca = commit -av
   st = status -sb
   sl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  up = pull
+  up = pull --rebase
   track = !git-track
   prune-all = !git-prune-all
   r = remote -v
