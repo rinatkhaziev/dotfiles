@@ -2,7 +2,8 @@
 #
 export PATH=$PATH:$HOME/.bin
 export PATH=/usr/local/bin:/usr/local/sbin:$HOME/pear/bin:$PATH
-
+# PHP 7.0 Homebrew
+export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 # Shell aliases
 #
 alias ls='ls -G'
@@ -43,10 +44,8 @@ alias vv="cd ~/Vagrant/vip-quickstart/www/wp-content/themes/vip"
 # Other stuff
 #
 alias "please"="sudo"
-alias "wakeupneo"="cmatrix"
 alias "countlines"="find . -name '*.php' | xargs wc -l"
 # ------------------------------------------------------------------------------
-
 
 # Docker
 alias setdocker="set_docker_machine_env"
