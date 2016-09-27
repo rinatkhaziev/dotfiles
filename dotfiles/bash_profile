@@ -63,7 +63,7 @@ parse_git_branch() {
 
 # Terminal options
 #
-INIT_PS="\`if [ \$? = 0 ]; then echo 👌🏼; else echo 😡; fi\`  [\u:\[\033[0;32m\]\w\[\033[m\]]"
+INIT_PS="\`if [ \$? = 0 ]; then echo 👌🏼; else echo 😡; fi\`  [\[\033[0;32m\]\w\[\033[m\]]"
 
 if [[ `whoami` == "root" ]]; then
 	PS1="# "
