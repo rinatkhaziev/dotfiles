@@ -1,0 +1,54 @@
+{
+  "animation_enabled": false,
+  "auto_complete_commit_on_tab": true,
+  "auto_complete_delay": 150,
+  "auto_complete_selector": "source, text",
+  "binary_file_patterns":
+  [
+    "*.dds",
+    "*.eot",
+    "*.gif",
+    "*.ico",
+    "*.jar",
+    "*.jpeg",
+    "*.jpg",
+    "*.pdf",
+    "*.png",
+    "*.swf",
+    "*.tga",
+    "*.ttf",
+    "*.zip",
+  ],
+  "color_scheme": "Packages/User/Color Highlighter/themes/Afterglow.tmTheme",
+  "folder_exclude_patterns":
+  [
+    "node_modules",
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    ".sass-cache"
+  ],
+  "font_options":
+  [
+    "no_bold"
+  ],
+  "font_size": 15,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "JSONLint",
+    "PHPUnit",
+    "PHPUnit Completions",
+    "Vintage"
+  ],
+  "index_exclude_patterns":
+  [
+    "*.log",
+    "*.map"
+  ],
+  "tab_size": 2,
+  "theme": "Default.sublime-theme",
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": "true"
+}
